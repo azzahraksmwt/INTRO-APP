@@ -1,0 +1,58 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menuDashboard"
+            android:title="Dashboard"
+            android:icon="@drawable/home"/>
+
+        <item
+            android:id="@+id/menuMasterData"
+            android:title="Master Data"
+            android:icon="@drawable/masterdata">
+
+            <menu>
+                <item android:id="@+id/menuDosen" android:title="Lecturer Data"/>
+                <item android:id="@+id/menuMahasiswa" android:title="Student Data"/>
+                <item android:id="@+id/menuInventory" android:title="Inventory"/>
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/menuPemakaianBarang"
+            android:title="Use of Goods"
+            android:icon="@drawable/inboxout">
+
+            <menu>
+                <item android:id="@+id/menuFormPemakaian" android:title="Goods Usage Form"/>
+                <item android:id="@+id/menuValidasiPemakaian" android:title="Validation Of Goods"/>
+                <item android:id="@+id/menuRiwayatPemakaian" android:title="Item Usage History"/>
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/menuPengembalianBarang"
+            android:title="Return of Goods"
+            android:icon="@drawable/inboxin">
+
+            <menu>
+                <item android:id="@+id/menuFormPengembalian" android:title="Goods Return Form"/>
+                <item android:id="@+id/menuValidasiPengembalian" android:title="Validation Of Return Of Goods"/>
+                <item android:id="@+id/menuRiwayatPengembalian" android:title="History Of Return Of Goods"/>
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/menuLaporan"
+            android:title="Goods Report"
+            android:icon="@drawable/laporan">
+
+            <menu>
+                <item android:id="@+id/menuLaporanMaterial" android:title="Material"/>
+                <item android:id="@+id/menuLaporanTool" android:title="Tool"/>
+            </menu>
+        </item>
+
+    </group>
+</menu>

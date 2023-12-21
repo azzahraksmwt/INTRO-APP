@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AddLecturerDataFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--        <include-->
+        <!--            layout="@layout/toolbar"-->
+        <!--            android:layout_width="60dp"-->
+        <!--            android:layout_height="match_parent"/>-->
+
+        <FrameLayout
+            android:id="@+id/flContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/btnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btnBack"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/arrowleft"
+                    android:contentDescription="@string/btnBack"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_view2dashboard">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#394360"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_AddLecturer"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="-33dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="25dp"
+                        android:layout_marginTop="20dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/nim"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:paddingHorizontal="10dp"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:hint="@string/desc_nim"
+                            android:textSize="12sp"
+                            android:layout_marginTop="10dp"
+                            android:paddingHorizontal="10dp"
+                            android:inputType="text"
+                            android:autofillHints="id"
+                            android:background="@drawable/custom_view3dashboard"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="25dp"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/full_name"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:paddingHorizontal="10dp"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:hint="@string/desc_full_name"
+                            android:textSize="12sp"
+                            android:layout_marginTop="10dp"
+                            android:paddingHorizontal="10dp"
+                            android:inputType="text"
+                            android:autofillHints="name"
+                            android:background="@drawable/custom_view3dashboard"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="25dp"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/generation"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:paddingHorizontal="10dp"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:hint="@string/desc_generation"
+                            android:textSize="12sp"
+
+                            android:layout_marginTop="10dp"
+                            android:paddingHorizontal="10dp"
+                            android:inputType="text"
+                            android:autofillHints="username"
+                            android:background="@drawable/custom_view3dashboard"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="25dp"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_class"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:paddingHorizontal="10dp"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:hint="@string/desc_class"
+                            android:textSize="12sp"
+                            android:layout_marginTop="10dp"
+                            android:paddingHorizontal="10dp"
+                            android:inputType="textVisiblePassword"
+                            android:autofillHints="password"
+                            android:background="@drawable/custom_view3dashboard"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="25dp"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/phone_number"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:paddingHorizontal="10dp"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:hint="@string/desc_phone_number"
+                            android:textSize="12sp"
+                            android:layout_marginTop="10dp"
+                            android:paddingHorizontal="10dp"
+                            android:inputType="textVisiblePassword"
+                            android:autofillHints="password"
+                            android:background="@drawable/custom_view3dashboard"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="25dp"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/username"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:paddingHorizontal="10dp"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:hint="@string/desc_username"
+                            android:textSize="12sp"
+                            android:layout_marginTop="10dp"
+                            android:paddingHorizontal="10dp"
+                            android:inputType="textVisiblePassword"
+                            android:autofillHints="password"
+                            android:background="@drawable/custom_view3dashboard"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="25dp"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/password"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:paddingHorizontal="10dp"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:hint="@string/desc_password"
+                            android:textSize="12sp"
+                            android:layout_marginTop="10dp"
+                            android:paddingHorizontal="10dp"
+                            android:inputType="textVisiblePassword"
+                            android:autofillHints="password"
+                            android:background="@drawable/custom_view3dashboard"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="15dp">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:text="@string/btn_Reset"
+                            android:layout_marginStart="170dp"/>
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:text="@string/btn_Add"
+                            android:layout_marginStart="10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/drawer_menu"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

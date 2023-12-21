@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="65dp"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:fitsSystemWindows="true"
+    android:background="#394360"
+    android:minHeight="?attr/actionBarSize">
+
+    <LinearLayout
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="10dp">
+
+        <ImageButton
+            android:id="@+id/btnlogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/button_logo"
+            android:contentDescription="@string/desc_Logo"
+            android:background="#00FFFFFF"
+            android:padding="15dp"/>
+
+        <ImageButton
+            android:id="@+id/btndashboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/button_dashboard"
+            android:contentDescription="@string/desc_dashboard"
+            android:background="#00FFFFFF"
+            android:padding="15dp"
+            android:layout_marginTop="25dp"/>
+<!--            android:layout_marginStart="270dp"/>-->
+
+        <ImageButton
+            android:id="@+id/btnmasterdata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/masterdata"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/button_masterdata"
+            android:contentDescription="@string/desc_masterdata"
+            android:background="#00FFFFFF"
+            android:padding="15dp"/>
+
+        <ImageButton
+            android:id="@+id/btnpemakaian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/inboxout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/button_pemakaian"
+            android:contentDescription="@string/desc_pemakaian"
+            android:background="#00FFFFFF"
+            android:padding="15dp"/>
+
+        <ImageButton
+            android:id="@+id/btnpengembalian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/inboxout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/button_pengembalian"
+            android:contentDescription="@string/desc_pengembalian"
+            android:background="#00FFFFFF"
+            android:padding="15dp"/>
+
+        <ImageButton
+            android:id="@+id/btnlaporan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/laporan"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/button_laporan"
+            android:contentDescription="@string/desc_laporan"
+            android:background="#00FFFFFF"
+            android:padding="15dp"/>
+
+    </LinearLayout>
+</androidx.appcompat.widget.Toolbar>
